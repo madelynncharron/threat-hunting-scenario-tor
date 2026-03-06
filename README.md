@@ -27,7 +27,7 @@ Management suspects that some employees may be using Tor browsers to bypass netw
 
 Searched for any file that contains “tor” and discovered that the user "labuser" downloaded a Tor installer. This resulted in many Tor-related files being copied to the desktop and creation of a file named `tor-shopping-list.txt` at `2026-03-06T17:49:05.185797Z`.
 
-**These events began at: `2026-03-06T17:49:05.185797Z (9:36:31 AM)`**
+**These events occured at: `2026-03-06T17:49:05.185797Z (9:36:31 AM)`**
 
 **Query used to locate events:**
 
@@ -38,9 +38,10 @@ DeviceFileEvents
 | where InitiatingProcessAccountName == "labuser"
 | where Timestamp >= datetime(2026-03-06T00:13:16.8668917Z)
 | order by Timestamp desc
-| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
+| project Timestamp, DeviceName, ActionType, FileName, FolderPath, Account = InitiatingProcessAccountName
 ```
-<img width="1251" height="744" alt="image" src="https://github.com/user-attachments/assets/24976b57-16c7-4905-8a92-21bf0152e21b" />
+<img width="1020" height="622" alt="image" src="https://github.com/user-attachments/assets/d84909f8-4451-4d91-8c9a-6c8b95d14160" />
+
 
 
 ---
@@ -49,7 +50,7 @@ DeviceFileEvents
 
 Searched for any `ProcessCommandLine` that contained “tor-browser-windows”. Based on the logs returned at `2026-03-06T17:36:03.2766091Z`, a user on device “mde-test” ran an executable named `tor-browser-windows-x86_64-portable-15.0.7.exe` from the Downloads folder using a command to silently install the Tor browser. 
 
-**These events began at: `2026-03-06T17:36:03.2766091Z (9:36:03 AM)`**
+**These events occured at: `2026-03-06T17:36:03.2766091Z (9:36:03 AM)`**
 
 **Query used to locate event:**
 
@@ -69,7 +70,7 @@ DeviceProcessEvents
 
 Searched for any `FileName` that had “tor.exe” or “firefox.exe” to see if there was any indication that “labuser” opened the Tor browser. There was evidence that the user did open the tor browser at `2026-03-06T17:36:43.5229446Z`. There were several other instances of `firefox.exe` (Tor) and `tor.exe` opened afterwards.
 
-**These events began at: ` 2026-03-06T17:36:43.5229446Z (9:36:43 AM)`**
+**These events occured at: ` 2026-03-06T17:36:43.5229446Z (9:36:43 AM)`**
 
 **Query used to locate events:**
 
@@ -89,7 +90,7 @@ DeviceProcessEvents
 
 Searched for any indication that the Tor browser was used to establish a connection to any of the known Tor ports. At `2026-03-06T17:38:51.6053804Z`, a user on “mde-test” device successfully established a connection to the remote IP address `185.150.28.13` on port `9001`. The connection was initiated by the `tor.exe` process located in folder `c:\users\labuser\desktop\tor browser\browser\torbrowser\tor\tor.exe`. There were a few other connections on port `443` as well.
 
-**These events began at: `2026-03-06T17:38:51.6053804Z (9:38:51 AM)`**
+**These events occured at: `2026-03-06T17:38:51.6053804Z (9:38:51 AM)`**
 
 **Query used to locate events:**
 
