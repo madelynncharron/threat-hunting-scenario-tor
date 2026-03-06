@@ -5,7 +5,8 @@
 1. Download the TOR browser installer: https://www.torproject.org/download/
 2. Install it silently: ```tor-browser-windows-x86_64-portable-15.0.7.exe /S```
 3. Opens the TOR browser from the folder on the desktop
-4. Connect to TOR and browse a few sites. https://onion.live/ For example:
+4. Connect to TOR and browse a few sites. https://onion.live/
+   For example:
    - Current Dread Forum: ```dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion```
    - Dark Markets Forum: ```dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/d/DarkNetMarkets```
    - Current Elysium Market: ```elysiumutkwscnmdohj23gkcyp3ebrf4iio3sngc5tvcgyfp4nqqmwad.top/login```
